@@ -1,0 +1,115 @@
+#wrapper {width: 100%;
+		
+		margin: 0 auto;
+		background: lightblue;	
+		padding: 70px;
+		}	
+.flax-container1 {	flex-direction: row;
+	height: 120px ;
+	display: flex;
+		}
+.flax-container1>img {height: 100px ;
+					margin: 0px 70px 0px 0px;
+				}
+h1 {font-size: 2em; color: red; text-align: center;}	
+ p {font-size: 1,7em;}
+nav a { color: white;}
+
+
+.titul img {height: 300px;
+				}	
+
+.container-fluid {background: white;
+				padding: 10px;
+				//border: solid red 1px;}
+		
+#left, #right{background: white;
+				//border: solid black 1px;}
+
+.flax-container2 {display: flex;
+				flex-direction: column;
+				}
+
+.containerTeachers {width: 100%;
+				}
+
+.containerTeachers img {max-width: 96%;
+  						display: inline-block;
+  						}
+
+@media (min-width: 480px) {.containerTeachers img {max-width: 48%; }
+}
+
+@media (min-width: 768px) {.containerTeachers img {max-width: 30%;  }
+}	
+					
+
+.box {color: black;
+		height: 40px;
+		border: solid 1px LightGrey	;
+		text-align: center;}
+
+
+.Musim {overflow:hidden;
+				 width: 380px;
+				 height: 250px;
+				 //border: solid 5px red;
+				 display: inline-block;
+ 				}
+ .Musim img {width: 100%;}				
+
+.Musim {opacity: 1;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+ 					}
+.Musim:hover {-webkit-transform: scale(1.5,1.5);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.5,1.5);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+ }
+
+
+
+ #footer {height: 90px;
+ 	background: SteelBlue;
+ 	padding: 30px;
+ 	}
+ 	
+
+ 	#calendar2 {border: solid LightGrey 1px;
+  height: 300px;
+  width: 300px;
+ position: absolute;
+ right: 30px;
+ top: 5px;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+}
